@@ -47,7 +47,7 @@ void themDiem(float array[],float k,int x){
 	scanf("%f",&k);
 	printf("\nNhap vi tri muon them diem : ");
 	scanf("%d",&x);
-	for(int i=n;i>x+1;i--){
+	for(int i=n-1;i>x;i--){
 		array[i+1]=array[i];
 	}
 	array[x]=k;
@@ -146,3 +146,4 @@ int main(){
 		} 
 	}while(choose!=8);
 }
+
