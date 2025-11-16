@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -7,7 +8,7 @@ int n=0;
 void nhap_diem(float array[]){
 	printf("\nNhap so luong diem : ");
 	scanf("%d",&n);
-	printf("\nNhap cac con diem cua sinh vien : ");
+	printf("\nNhap cac con diem cua sinh vien tu 0 -> 10 : ");
 	for(int i=0;i<n;i++){
 		scanf("%f",&array[i]);
 	}
@@ -143,6 +144,9 @@ int main(){
 			break;
 			case 8:
 				return 0;
+			default:
+				printf("Loi vui long chon lai :");
+				scanf("%d",&choose);
 		} 
 	}while(choose!=8);
 }
